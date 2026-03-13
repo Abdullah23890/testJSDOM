@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    
+    <ul id="parent">
+        <li id="child"> 1 </li>
+    </ul>
+
+    <button id="btn" > Delete List Item </button>
+
+    <script>
+
+    let p = document.getElementById("parent");
+    let c = document.getElementById("child");
+    let b = document.getElementById("btn");
+
+    b.addEventListener("click", function(){
+        p.removeChild(c);
+    })
+
+    </script>
+</body>
+</html>
