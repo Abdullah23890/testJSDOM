@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <div class="main">
+    <div id="main">
     <h1 id="head"> JS DOM  </h1>
     </div>
     <button id="btn"> Click </button>
@@ -18,9 +18,9 @@
         let b = document.getElementById("btn");
 
         b.addEventListener("click", function(){
-            let n = document.createElement("h2");
+            let n = document.createElement("h1");
             n.textContent = " Change ";
-            m.replaceWith("n", "h");
+            m.replaceChild(n, h);
         })
 
     </script>
